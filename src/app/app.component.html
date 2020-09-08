@@ -11,6 +11,8 @@
     <span [style.color]="themecolor" >Theme color now</span>
     <hr>
     <input name="themecolor" matInput [(ngModel)] = "themecolor" type="text">
+    <hr>
+    <button mat-button (mouseenter)="updateColor()">Update</button>
   </mat-form-field>
 </mat-card>
 

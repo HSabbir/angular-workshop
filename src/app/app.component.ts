@@ -12,4 +12,8 @@ export class AppComponent {
   arr = [
     'a','b','c','d'
   ];
+  updateColor(){
+    console.log('changed wala wala')
+    this.themecolor = 'DARKORCHID';
+  }
 }
