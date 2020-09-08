@@ -1,33 +1,16 @@
 <mat-card>
-  <form class="example-form">
-    <mat-form-field class="example-full-width">
-      <mat-label>Favorite food</mat-label>
-      <input matInput placeholder="Ex. Pizza" value="Sushi">
-    </mat-form-field>
+  <h1>
+    {{title}}
+  </h1>
 
-    <mat-form-field class="example-full-width">
-      <mat-label>Leave a comment</mat-label>
-      <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
-    </mat-form-field>
-  </form>
+
+
+  <mat-form-field class="example-full-width">
+    {{themecolor}}
+    <hr>
+    <span [style.color]="themecolor" >Theme color now</span>
+    <hr>
+    <input name="themecolor" matInput [(ngModel)] = "themecolor" type="text">
+  </mat-form-field>
 </mat-card>
-<mat-card>
-  <div class="example-container">
-    <mat-form-field appearance="fill">
-      <mat-label>Input</mat-label>
-      <input matInput>
-    </mat-form-field>
-    <br>
-    <mat-form-field appearance="fill">
-      <mat-label>Select</mat-label>
-      <mat-select>
-        <mat-option value="option">Option</mat-option>
-      </mat-select>
-    </mat-form-field>
-    <br>
-    <mat-form-field appearance="fill">
-      <mat-label>Textarea</mat-label>
-      <textarea matInput></textarea>
-    </mat-form-field>
-  </div>
-</mat-card>
+

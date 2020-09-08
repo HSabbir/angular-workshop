@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-workshop';
+  name = 'Hello boss Sabbir';
+  themecolor = "blue";
+  arr = [
+    'a','b','c','d'
+  ];
 }

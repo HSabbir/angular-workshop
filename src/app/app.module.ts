@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ItemsComponent } from './items/items.component';
 import {MaterialModule} from "./material.module";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import {MaterialModule} from "./material.module";
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     MaterialModule,
     BrowserAnimationsModule,
   ],
